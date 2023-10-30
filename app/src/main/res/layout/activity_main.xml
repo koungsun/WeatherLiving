@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weatherLivingCon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints,UselessLeaf,VisualLintBounds"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textPos"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/txtPosition" />
+
+            <TextView
+                android:id="@+id/textDateTime"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/txtDate"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textWeatherInfo"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/txtWeatherInfo" />
+
+            <TextView
+                android:id="@+id/textWeatherTmp"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/textWeathreTemp" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/city_sido"
+                android:spinnerMode="dialog"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="0dp"
+                android:prompt="@string/str_sido"/>
+
+            <Spinner
+                android:id="@+id/city_gu"
+                android:prompt="@string/str_gu"
+                android:spinnerMode="dialog"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp" />
+
+
+            <Spinner
+                android:id="@+id/city_dong"
+                android:prompt="@string/str_dong"
+                android:spinnerMode="dialog"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
